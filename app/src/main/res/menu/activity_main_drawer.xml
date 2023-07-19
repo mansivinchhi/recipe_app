@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/baseline_menu_book_24"
+            android:title="Category" />
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/baseline_local_dining_24"
+            android:title="@string/food"
+            />
+        <item
+        android:id="@+id/nav_fav"
+        android:icon="@drawable/baseline_thumb_up_alt_24"
+        android:title="@string/favourite" />
+        <item
+            android:id="@+id/nav_AboutUs"
+            android:icon="@drawable/baseline_people_alt_24"
+            android:title="@string/contactandabout" />
+        <item
+            android:id="@+id/nav_cat_res"
+            android:enabled="true"
+            android:icon="@drawable/baseline_menu_book_24"
+            android:title="@string/Recipes"/>
+    </group>
+</menu>

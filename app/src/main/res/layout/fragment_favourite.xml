@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.FavouriteFragment">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="match_parent"
+         android:layout_height="230dp"
+         android:foreground="@drawable/forground_design"
+         android:scaleType="centerCrop"
+         android:src="@drawable/waffles"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <TextView
+         android:id="@+id/textView11"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:fontFamily="@font/amarante"
+         android:text="@string/Favourite_Food"
+         android:textColor="@color/white"
+         android:textSize="26dp"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="@id/imageView"
+         app:layout_constraintEnd_toEndOf="parent "
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@id/imageView"
+         app:layout_constraintVertical_bias="0.7" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/daily_recipe_bg"
+         android:padding="10dp"
+         android:text=" View More"
+         android:layout_margin="8dp"
+         android:textStyle="bold"
+         android:textSize="16sp"
+         app:layout_constraintBottom_toBottomOf="@id/imageView"
+         app:layout_constraintEnd_toEndOf="parent" />
+
+     <TextView
+         android:layout_margin="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="your Favourite and testy food"
+         android:textColor="@color/white"
+         android:textSize="10dp"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="@id/imageView"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+     <com.google.android.material.tabs.TabLayout
+         android:id="@+id/tab_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toBottomOf="@+id/imageView"
+         tools:layout_editor_absoluteY="181dp" >
+     </com.google.android.material.tabs.TabLayout>
+
+
+  <androidx.viewpager2.widget.ViewPager2
+         android:id="@+id/ViewPager2"
+         android:layout_width="match_parent"
+         android:layout_height="450dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/tab_layout" >
+
+     </androidx.viewpager2.widget.ViewPager2>
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

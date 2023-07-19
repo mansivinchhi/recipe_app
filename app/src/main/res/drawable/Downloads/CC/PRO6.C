@@ -1,0 +1,63 @@
+/* #include<stdio.h>
+#include<conio.h>
+int slop(int x1,int y1,int x2,int y2);
+void main()
+{
+	int x1=3,y1=7,x2=8,y2=12,temp;
+	clrscr();
+	slop(x1, y1, x2, y2);
+	temp=slop(x1, y1, x2, y2);
+	printf("%d",temp);
+	getch();
+}
+int slop (int x1,int x2,int y1, int y2)
+{
+int sum;
+sum=(y2-y1)/(x2-x1);
+return sum;
+
+}  */
+
+/*
+
+#include<stdio.h>
+#include<conio.h>
+double display(int x1,int x2,int y1, int y2);
+void main()
+{
+     int x1=3,y1=7,x2=8,y2=12;
+     double temp;
+     clrscr();
+     display(x1, y1, x2, y2);
+     temp=display(x1, y1, x2, y2);
+     printf("%lf",temp);
+     getch();
+}
+double display(int x1,int x2,int y1, int y2)
+{
+	double sum;
+	sum=(double)(y2-y1)/(x2-x1);																																																																					;
+	return sum;
+
+}
+
+*/
+#include<stdio.h>
+#include<conio.h>
+int slop(int x1,int y1,int x2,int y2);
+void main()
+{
+	int x1=3,y1=7,x2=8,y2=12;
+	double temp;
+	clrscr();
+	slop(x1, y1, x2, y2);
+	temp=slop(x1, y1, x2, y2);
+	printf("%lf",temp);
+	getch();
+}
+int slop(int x1,int x2,int y1, int y2)
+{
+	int sum;
+	sum=(double)(x1+x2)/2,(y1-y2)/2;
+	return sum;
+}

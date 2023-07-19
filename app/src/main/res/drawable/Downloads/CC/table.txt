@@ -1,0 +1,8 @@
+create table department
+(
+	dept_no number,
+	dept_name varchar2(20),
+	location varchar2(20)
+);
+
+insert into 

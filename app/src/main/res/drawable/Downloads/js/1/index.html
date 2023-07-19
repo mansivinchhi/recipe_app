@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <script src="table.js"></script>
+    <script>
+        checkValid = (e) => {
+            let obj = e.value.trim();
+
+            if (obj == "") {
+                if (e.id === "txt1") {
+                    e.style.background = "#ffcccb"
+                    document.getElementById("msg").innerHTML = `Please Enter ${e.name}`
+                }
+
+
+                if (e.id === "txt2") {
+                    e.style.background = "#ffcccb"
+                    document.getElementById("passmsg").innerHTML = `Please Enter ${e.name}`
+                }
+
+
+            }
+            else {
+
+
+                e.style.background = "#90EE90"
+
+            }
+
+        }
+
+
+        checkEmpty = (e) => {
+
+            if (e.name === "UserName") {
+                document.getElementById("msg").innerHTML = ""
+            }
+            if (e.name === "Password") {
+                document.getElementById("passmsg").innerHTML = ""
+            }
+
+        }
+
+
+
+        formValidation = (el) => {
+
+            falg = true
+
+            if(el.txt1.value.trim()==="") {
+                el.txt1.style.background = "#ffcccb"
+                falg = false
+            }
+            else{
+                 el.txt1.style.background="green"
+                
+             }
+           
+
+            if (el.txt2.value.trim()==="") {
+                el.txt2.style.background = "#ffcccb"
+                falg = false
+            }
+          
+
+
+
+            return falg;
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <form  onsubmit=" return formValidation(this);">
+
+        <!-- <input type="text" name="UserName"  onblur="checkValid(this);" onfocus="checkEmpty(this);" id="txt1" placeholder="Enter Username" >
+                    <br>
+                    <p id="msg"></p>
+                    <input type="password" name="Password" onblur="checkValid(this);"  onfocus="checkEmpty(this);" id="txt2" placeholder="Enter Password">
+                    <br>
+                    <p id="passmsg"></p> -->
+
+        <input type="text" name="UserName" id="txt1" placeholder="Enter Username">
+        <br>
+        <p id="msg"></p>
+        <input type="password" name="Password" id="txt2" placeholder="Enter Password">
+        <br>
+        <p id="passmsg"></p>
+       <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let ot;
+        let chk_box=document.getElementById('overtime');
+        let textBoxVisible = () => 
+        {
+            
+            
+            let text_box=document.getElementById('ot1')
+
+            if(chk_box.checked==true)
+            {
+                text_box.removeAttribute("hidden")
+                ot = text_box.value;
+
+            }
+            else
+            {
+                ot=undefined;
+                text_box.setAttribute("hidden",false)
+            }
+        }
+        
+        let result=()=>{
+            
+            let work = document.getElementById('work').value
+            let pay = document.getElementById('pay').value
+            let amout = document.getElementById("amount");
+            let res="";
+            res=parseInt(work)*parseInt(pay);
+            if(chk_box.checked==true)
+            {
+                ot=(parseInt(ot)*(parseInt(pay)*2)); 
+                res+=ot;  
+            }
+         
+            
+                amout.innerHTML+=res
+
+           
+        
+
+        }
+
+    </script>
+</head>
+ <body>
+    
+            <span>Number of hours worked:</span>
+            <input type="text" name="work" id="work">
+            <br>
+            <span>Hourly rate:</span>
+            <select name="pay" id="pay">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+            </select>
+            <span>Overtime:</span><input type="checkbox" id="overtime"  onclick="textBoxVisible();">
+            <input type="text" id="ot1"  hidden>
+            <br>
+            <input type="button" value="Calculate" onclick="result();">
+            <br>
+            <p id="amount">Total amount to be paid:</p>
+
+   </body>
+</html>

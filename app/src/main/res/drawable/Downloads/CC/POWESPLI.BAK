@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+long power (long x,long y);
+
+int main()
+
+{
+	long a,b,c;
+	clrscr();
+	printf("enter a base number:");
+	scanf("%ld",&a);
+	printf("enter an exponent:");
+	scanf("%ld",&b);
+	c=power(a,b);
+	printf("answer is: %ld",c);
+	getch();
+	return 0;
+
+
+
+
+}
+long power(long x,long y)
+	{
+		long temp;
+		if(y==0)
+			return 1;
+		temp=power(x,y/2);
+		if(y%2==0)
+			return temp*temp;
+		else
+		return x*temp*temp;
+
+	}

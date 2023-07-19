@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.my_food_recipe_app_project_design.ui.home.Home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.example.my_food_recipe_app_project_design.ui.slideshow.FavouriteFragment"
+        android:label="Favourite"
+        tools:layout="@layout/fragment_favourite" />
+
+    <fragment
+        android:id="@+id/nav_AboutUs"
+        android:name="com.example.my_food_recipe_app_project_design.BlankFragment"
+        android:label="@string/contactandabout"
+        tools:layout="@layout/fragment_blank" />
+
+    <fragment
+        android:id="@+id/nav_fav"
+        android:name="com.example.my_food_recipe_app_project_design.fav"
+        android:label="@string/Favourite"
+        tools:layout="@layout/fragment_fav"/>
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.my_food_recipe_app_project_design.Category_List"
+        android:label="Category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/nav_cat_res"
+        android:name="com.example.my_food_recipe_app_project_design.detailpage"
+        android:label="Recipe_Categories"
+        tools:layout="@layout/category_menu"/>
+
+
+
+
+</navigation>

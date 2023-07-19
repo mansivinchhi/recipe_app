@@ -1,0 +1,22 @@
+-----STUDENT (rollno, name, class, birthdate)
+-----COURSE (courseno, coursename, max_marks, pass_marks)
+----SC (rollno, courseno, marks)
+
+create table STUDENTS( 
+rollno number, 
+name varchar2(20),
+class varchar2(40),
+birthdate date
+);
+
+create table COURSES( 
+courseno number, 
+coursename varchar2(20),
+max_marks int,
+pass_marks int
+);
+
+create table SC(
+rollno number,
+courseno number,
+marks int);

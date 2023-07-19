@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".RecipeDetailsFragment">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/recipe_detail_toolbar_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                android:background="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btnback_recipe_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="left"
+
+                    android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+
+                    android:backgroundTint="@color/purple_200"
+                    android:textColor="@color/black" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/txtrecipe_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Recipe Title "
+                android:textColor="@color/purple_200"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe_detail_toolbar_back_button" />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/recipe_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtrecipe_title"
+                app:layout_constraintStart_toStartOf="@+id/txtrecipe_title"
+                app:layout_constraintTop_toBottomOf="@+id/txtrecipe_title"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txt_recipe_ingredients_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Ingradients :"
+                android:textColor="@color/purple_200"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/recipe_details_image"
+                app:layout_constraintStart_toStartOf="@+id/recipe_details_image"
+                app:layout_constraintTop_toBottomOf="@+id/recipe_details_image" />
+
+            <WebView
+                android:id="@+id/txt_recipe_ingredients_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+
+                android:contextClickable="true"
+                android:background="@drawable/bgcorner"
+
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_recipe_ingredients_title"
+                app:layout_constraintStart_toStartOf="@+id/txt_recipe_ingredients_title"
+                app:layout_constraintTop_toBottomOf="@+id/txt_recipe_ingredients_title" />
+
+            <TextView
+                android:id="@+id/txt_instruction_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/recipe"
+                android:textColor="@color/purple_200"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txt_recipe_ingredients_details"
+                app:layout_constraintStart_toStartOf="@+id/txt_recipe_ingredients_title"
+                app:layout_constraintTop_toBottomOf="@+id/txt_recipe_ingredients_details" />
+
+
+
+
+            <WebView
+                android:id="@+id/txt_recipe_instruction_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_instruction_title"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_instruction_title"
+                app:layout_constraintTop_toBottomOf="@+id/txt_instruction_title" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/regular_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:src="@drawable/baseline_star_half_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_recipe_instruction_details" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

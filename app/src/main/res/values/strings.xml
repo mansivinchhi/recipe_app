@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">my_food_Recipe_app_Project_design</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="my_food_recipe_app">My Food Recipe App</string>
+    <string name="hello_explore_your_dream_food">hello_explore_your_dream_food</string>
+
+    <string name="sign_in">Sign_in</string>
+    <string name="explore_your_dream_food">explore_your_dream_food</string>
+    <string name="my_recipe_app">My Recipe App</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="Sign_In">Sign_In</string>
+    <string name="SignIn">SignIn</string>
+    <string name="signin">SignIn</string>
+    <string name="don_t_have_an_account">Don\'t Have An Account</string>
+    <string name="daily_recipe">Daily Recipe</string>
+    <string name="favourite">favourite</string>
+    <string name="Contact_us">Contact Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="About_Us">About Us</string>
+    <string name="log_out">Log Out</string>
+    <string name="search_here">Search Here</string>
+    <string name="what_do_you_want">What do you want ?</string>
+    <string name="pizza">Pizza</string>
+    <string name="welcome">Welcome !</string>
+    <string name="search_for_person">search for person</string>
+
+
+    <string name="youur_Favourite_testy_food">Your favourite and Testy Food !</string>
+
+
+    //Headings
+    <string name="heading_one">Food Recipes App</string>
+    <string name="heading_two">Food Is Fun</string>
+    <string name="heading_three">Learn More</string>
+    <string name="heading_fourth">Thank You</string>
+
+    //Description
+    <string name="desc_one">Grow Your Feetness By making helthy Food</string>
+    <string name="desc_two">Learn And see a different types of recipes for any items and making it and Enjoy them</string>
+    <string name="desc_three">Food Is Fun</string>
+    <string name="desc_fourth">Thank you</string>
+    <string name="Favourite">Favourite</string>
+    <string name="contactandabout"><![CDATA[Contact Us & About Us]]></string>
+    <string name="Favourite_Food">Favourite\n Food</string>
+    <string name="Third_Fragment">ThirdFragment</string>
+    <string name="Second_Fragment">SecondFragment</string>
+    <string name="First_Fragment">FirstFragment</string>
+    <string name="foodname">Food Name</string>
+    <string name="food">Food</string>
+    <string name="myfav">My Favourite</string>
+    <string name="good">good</string>
+    <string name="detailedrecipe">Detailed Recipe</string>
+    <string name="confirm_password">confirm_password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="Feedback">Feedback</string>
+    <string name="Category">Category</string>
+    <string name="hom">hom</string>
+    <string name="food_recipe_app">food_recipe_app</string>
+    <string name="recipe">recipe</string>
+    <string name="homepage">homepage</string>
+    <string name="Searchhear">Search hear</string>
+    <string name="Search_hear">Search hear</string>
+    <string name="search_hear">search_hear</string>
+    <string name="Read_More">Read More</string>
+    <string name="Read">Read</string>
+    <string name="Recipes">Recipes</string>
+
+</resources>
